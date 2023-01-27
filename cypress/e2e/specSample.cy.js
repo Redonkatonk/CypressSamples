@@ -1,10 +1,6 @@
 import testData from '..//fixtures/example.json'
 
 describe('Fill Form Test', () => {
-  before(function () {
-    cy.fixture('example').as('testData')
-})
-
   it('Completed', () => {
     cy.visit(testData.baseUri)
 
