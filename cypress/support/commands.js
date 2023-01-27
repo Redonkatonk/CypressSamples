@@ -23,3 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('getBubble', (index) => cy.get(`#i${index} > .vd3tt > .AB7Lab`))
+Cypress.Commands.add('getTextbox', (section) => cy.get(`:nth-child(${section}) > [jsmodel="CP1oW"] > .geS5n > .AgroKb > .edhGSc > .RpC4Ne > .Pc9Gce > .KHxj8b`))
+Cypress.Commands.add('getSubmit', () => cy.get('.lRwqcd > .uArJ5e > .l4V7wb > .NPEfkd'))
