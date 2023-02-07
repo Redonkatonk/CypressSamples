@@ -1,4 +1,4 @@
-import testData from '..//fixtures/example.json'
+import testData from '../fixtures/example.json'
 
 describe('Fill Form Test', () => {
   it('Completed', () => {
@@ -22,5 +22,8 @@ describe('Fill Form Test', () => {
 
     cy.getSubmit().click()
     cy.get('.vHW8K').should('have.text', testData.Result)
+  })
+  it('', () => {
+    
   })
 })
